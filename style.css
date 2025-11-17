@@ -1,10 +1,12 @@
+/* ฟอนต์และพื้นฐาน */
 body {
   font-family: 'Kanit', sans-serif;
   margin: 0;
-  background-color: #f0f4f8;
+  background-color: #f2f4f7;
   color: #333;
 }
 
+/* Header */
 header {
   background-color: #002147;
   color: #fff;
@@ -32,12 +34,14 @@ header p {
   font-weight: 300;
 }
 
+/* Main */
 main {
   max-width: 700px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
+/* Search section */
 .search-section {
   background-color: #fff;
   padding: 30px;
@@ -80,6 +84,7 @@ main {
   background-color: #0066cc;
 }
 
+/* Result section */
 .result-section {
   margin-top: 30px;
   text-align: center;
@@ -93,8 +98,15 @@ main {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   font-size: 18px;
   color: #002147;
+  line-height: 1.6;
 }
 
+.result-card.error {
+  background-color: #ffdede;
+  color: #800000;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 15px;
