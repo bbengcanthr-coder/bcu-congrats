@@ -1,59 +1,104 @@
 body {
-    font-family: 'TH Sarabun', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    margin: 0;
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  background-color: #f0f4f8;
+  color: #333;
 }
 
 header {
-    background-color: #004080;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #002147;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 header .logo {
-    height: 80px;
-    display: block;
-    margin: 0 auto 10px;
+  height: 80px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-weight: 300;
 }
 
 main {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.search-section input {
-    width: calc(50% - 10px);
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.search-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.search-section button {
-    padding: 10px 20px;
-    background-color: #004080;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.search-section h2 {
+  margin-top: 0;
+  color: #002147;
 }
 
-.search-section button:hover {
-    background-color: #0066cc;
+.inputs {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputs input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.inputs button {
+  padding: 10px 25px;
+  border: none;
+  background-color: #004080;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.inputs button:hover {
+  background-color: #0066cc;
 }
 
 .result-section {
-    margin-top: 20px;
-    font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
 }
 
-.result-section p {
+.result-card {
+  display: inline-block;
+  background-color: #e0f0ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   font-size: 18px;
-  font-weight: bold;
+  color: #002147;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #002147;
+  color: white;
+  margin-top: 50px;
 }
