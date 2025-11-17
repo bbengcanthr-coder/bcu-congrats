@@ -1,5 +1,6 @@
 [
   {
+    "studentID": "B12345",
     "firstName": "บรรเจิด",
     "lastName": "เปรมปรีดิ์",
     "year": 4,
@@ -7,6 +8,7 @@
     "major": "ประติมากรรม"
   },
   {
+    "studentID": "B23456",
     "firstName": "สมชาย",
     "lastName": "ใจดี",
     "year": 3,
@@ -14,6 +16,7 @@
     "major": "คณิตศาสตร์"
   },
   {
+    "studentID": "B34567",
     "firstName": "มาลี",
     "lastName": "งามสง่า",
     "year": 2,
