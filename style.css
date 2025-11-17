@@ -2,7 +2,7 @@
 body {
   font-family: 'Kanit', sans-serif;
   margin: 0;
-  background-color: #f2f4f7;
+  background-color: #f7f9fc;
   color: #333;
 }
 
@@ -11,13 +11,14 @@ header {
   background-color: #002147;
   color: #fff;
   padding: 20px 0;
+  text-align: center;
 }
 
 .header-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 header .logo {
@@ -36,13 +37,17 @@ header p {
 
 /* Main */
 main {
-  max-width: 700px;
+  max-width: 600px;
   margin: 40px auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Search section */
 .search-section {
+  width: 100%;
   background-color: #fff;
   padding: 30px;
   border-radius: 12px;
@@ -57,17 +62,19 @@ main {
 
 .inputs {
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .inputs input {
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  width: 200px;
+  width: 80%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
 .inputs button {
@@ -78,6 +85,8 @@ main {
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
+  width: 50%;
+  max-width: 150px;
 }
 
 .inputs button:hover {
@@ -87,11 +96,11 @@ main {
 /* Result section */
 .result-section {
   margin-top: 30px;
+  width: 100%;
   text-align: center;
 }
 
 .result-card {
-  display: inline-block;
   background-color: #e0f0ff;
   padding: 20px;
   border-radius: 10px;
@@ -99,6 +108,10 @@ main {
   font-size: 18px;
   color: #002147;
   line-height: 1.6;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 .result-card.error {
