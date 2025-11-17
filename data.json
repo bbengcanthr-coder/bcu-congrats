@@ -1,6 +1,6 @@
 [
   {
-    "studentID": "B12345",
+    "studentID": "65-00061-39FA",
     "firstName": "บรรเจิด",
     "lastName": "เปรมปรีดิ์",
     "year": 4,
@@ -8,19 +8,19 @@
     "major": "ประติมากรรม"
   },
   {
-    "studentID": "B23456",
-    "firstName": "สมชาย",
-    "lastName": "ใจดี",
-    "year": 3,
-    "faculty": "วิทยาศาสตร์",
-    "major": "คณิตศาสตร์"
+    "studentID": "65-05147-01ENG",
+    "firstName": "เหนือสมุทร",
+    "lastName": "ปลื้มปรวาณ",
+    "year": 4,
+    "faculty": "วิศวกรรมศาสตร์",
+    "major": "คอมพิวเตอร์"
   },
   {
-    "studentID": "B34567",
-    "firstName": "มาลี",
-    "lastName": "งามสง่า",
+    "studentID": "65-00021-07BA",
+    "firstName": "พัดพารัดชา",
+    "lastName": "ปทุมสนธยา",
     "year": 2,
-    "faculty": "สังคมศาสตร์",
-    "major": "จิตวิทยา"
+    "faculty": "บริหารธุรกิจ",
+    "major": "การตลาด"
   }
 ]
