@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ประกาศการเลื่อนชั้นปี - มหาวิทยาลัยเบงจันทร์</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประกาศความยินดีเลื่อนชั้นปี | มหาวิทยาลัยเบงจันทร์</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="ตราสำนัก.png" alt="โลโก้มหาวิทยาลัยเบงจันทร์" class="logo">
-    <h1>มหาวิทยาลัยเบงจันทร์</h1>
-  </header>
+    <header>
+        <img src="ตราสำนัก.png" alt="โลโก้ มหาวิทยาลัยเบงจันทร์" class="logo">
+        <h1>ประกาศความยินดีเลื่อนชั้นปี</h1>
+    </header>
 
-  <main>
-    <section class="form-section">
-      <h2>กรอกชื่อ-นามสกุลเพื่อดูข้อมูล</h2>
-      <input type="text" id="firstName" placeholder="ชื่อ">
-      <input type="text" id="lastName" placeholder="นามสกุล">
-      <button onclick="checkStudent()">ค้นหา</button>
-    </section>
+    <main>
+        <section class="search-section">
+            <h2>ค้นหานักศึกษา</h2>
+            <input type="text" id="firstName" placeholder="ชื่อจริง">
+            <input type="text" id="lastName" placeholder="นามสกุล">
+            <button onclick="searchStudent()">ค้นหา</button>
+        </section>
 
-    <section class="result-section" id="resultSection" style="display:none;">
-      <p id="resultText"></p>
-    </section>
-  </main>
+        <section id="result" class="result-section"></section>
+    </main>
 
-  <script src="script.js"></script>
+    <footer>
+        © 2568 มหาวิทยาลัยเบงจันทร์
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
