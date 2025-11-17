@@ -24,7 +24,7 @@ async function searchStudent() {
     `;
   } else {
     resultDiv.innerHTML = `
-      <div class="result-card" style="background-color:#ffdede;color:#800000;">
+      <div class="result-card error">
         ไม่พบข้อมูลนักศึกษานี้
       </div>
     `;
