@@ -17,7 +17,7 @@ async function searchStudent() {
     resultDiv.innerHTML = `
       <div class="result-card">
         รหัสนักศึกษา: ${student.studentID} <br>
-        นาย${student.firstName} ${student.lastName} <br>
+        ${student.firstName} ${student.lastName} <br>
         ขอแสดงความยินดีที่ได้เลื่อนระดับชั้น <br>
         เป็นชั้นปีที่ ${student.year} <br>
         คณะ${student.faculty} สาขาวิชา${student.major}
