@@ -1,34 +1,21 @@
-// ตัวอย่างข้อมูลนักศึกษา
-const students = [
-  {
-    firstName: "บรรเจิด",
-    lastName: "เปรมปรีดิ์",
-    year: 4,
-    faculty: "วิจิตรศิลป์",
-    major: "ประติมากรรม"
-  },
-  {
-    firstName: "สมเดช",
-    lastName: "สุขสวัสดิ์",
-    year: 3,
-    faculty: "วิศวกรรมศาสตร์",
-    major: "คอมพิวเตอร์"
-  }
-];
+async function searchStudent() {
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
 
-function checkStudent() {
-  const firstName = document.getElementById("firstName").value.trim();
-  const lastName = document.getElementById("lastName").value.trim();
-  const resultSection = document.getElementById("resultSection");
-  const resultText = document.getElementById("resultText");
+    if (!firstName || !lastName) {
+        alert('กรุณากรอกชื่อและนามสกุล');
+        return;
+    }
 
-  const student = students.find(s => s.firstName === firstName && s.lastName === lastName);
+    const response = await fetch('data.json');
+    const students = await response.json();
 
-  if(student) {
-    resultText.textContent = `${student.firstName} ${student.lastName} ขอแสดงความยินดีที่ได้เลื่อนระดับชั้น เป็นชั้นปีที่ ${student.year} คณะ${student.faculty} สาขาวิชา${student.major}`;
-  } else {
-    resultText.textContent = "ไม่พบข้อมูลนักศึกษาคนนี้";
-  }
+    const student = students.find(s => s.firstName === firstName && s.lastName === lastName);
 
-  resultSection.style.display = "block";
+    const resultDiv = document.getElementById('result');
+    if (student) {
+        resultDiv.innerHTML = `นาย${student.firstName} ${student.lastName} ขอแสดงความยินดีที่ได้เลื่อนระดับชั้น เป็นชั้นปีที่ ${student.year} คณะ${student.faculty} สาขาวิชา${student.major}`;
+    } else {
+        resultDiv.innerHTML = 'ไม่พบข้อมูลนักศึกษานี้';
+    }
 }
